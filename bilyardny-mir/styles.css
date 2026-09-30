@@ -252,7 +252,7 @@ button {
 .hero-copy {
   position: relative;
   z-index: 2;
-  width: min(100% - 2 * var(--space), 34rem);
+  width: min(100% - 2 * var(--space), 42rem);
   margin: 0 auto 0 max(var(--space), calc((100% - var(--max)) / 2));
   padding: 7rem 0 4.5rem;
   text-align: left;
@@ -260,39 +260,42 @@ button {
 }
 
 .brand-mark {
-  margin: 0 0 0.45rem;
+  margin: 0 0 0.65rem;
   font-family: var(--font-display);
-  font-size: clamp(3.2rem, 11vw, 6.5rem);
-  letter-spacing: 0.06em;
-  line-height: 0.92;
+  font-size: clamp(2.55rem, 6.5vw, 4.1rem);
+  letter-spacing: 0.05em;
+  line-height: 0.98;
   color: #fff;
-  text-shadow: 0 0.06em 0.25em rgba(0, 0, 0, 0.25);
+  text-shadow: 0 0.06em 0.25em rgba(0, 0, 0, 0.35);
   animation: riseIn 0.9s ease both;
+  display: inline-block;
+  padding-bottom: 0.2rem;
+  border-bottom: 2px solid rgba(212, 165, 116, 0.85);
 }
 
 .brand-mark span {
-  display: block;
-  font-size: 0.42em;
-  letter-spacing: 0.14em;
-  color: #fff;
-  margin-bottom: 0.08em;
+  display: inline;
+  font-size: 1em;
+  letter-spacing: inherit;
+  color: inherit;
+  margin-bottom: 0;
 }
 
 .hero h1 {
   margin: 0 0 1rem;
-  max-width: 14ch;
+  max-width: 22ch;
   font-family: var(--font-display);
-  font-size: clamp(1.8rem, 5vw, 3rem);
+  font-size: clamp(1.25rem, 3.2vw, 1.85rem);
   font-weight: 400;
   letter-spacing: 0.04em;
-  line-height: 1.05;
+  line-height: 1.15;
   color: rgba(255, 255, 255, 0.92);
   animation: riseIn 0.9s ease 0.12s both;
 }
 
 .hero-lead {
   margin: 0 0 1.75rem;
-  max-width: 34ch;
+  max-width: 42ch;
   color: rgba(255, 255, 255, 0.88);
   font-size: 1.05rem;
   animation: riseIn 0.9s ease 0.22s both;
