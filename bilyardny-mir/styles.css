@@ -168,8 +168,7 @@ button {
   position: relative;
   min-height: 100svh;
   display: grid;
-  align-items: center;
-  justify-items: center;
+  align-items: end;
   overflow: hidden;
 }
 
@@ -197,52 +196,58 @@ button {
 .hero-copy {
   position: relative;
   z-index: 1;
-  width: min(100% - 2 * var(--space), 42rem);
+  width: min(100% - 2 * var(--space), var(--max));
   margin: 0 auto;
-  padding: 6.5rem 0 3.5rem;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.brand-eyebrow {
-  margin: 0 0 0.85rem;
-  font-size: 0.78rem;
-  font-weight: 600;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: var(--brass-soft);
-  animation: riseIn 0.9s ease both;
+  padding: 7rem 0 4.5rem;
+  text-align: left;
+  display: block;
 }
 
 .brand-mark {
-  margin: 0 0 1rem;
-  max-width: 11ch;
+  margin: 0 0 0.45rem;
   font-family: var(--font-display);
-  font-size: clamp(4.2rem, 14vw, 7.5rem);
-  letter-spacing: 0.04em;
+  font-size: clamp(3.2rem, 11vw, 6.5rem);
+  letter-spacing: 0.06em;
   line-height: 0.92;
-  font-weight: 400;
   color: var(--cream);
   text-shadow: 0 0.08em 0.35em rgba(0, 0, 0, 0.45);
-  animation: riseIn 0.9s ease 0.08s both;
+  animation: riseIn 0.9s ease both;
+}
+
+.brand-mark span {
+  display: block;
+  font-size: 0.42em;
+  letter-spacing: 0.14em;
+  color: var(--cream);
+  margin-bottom: 0.08em;
+}
+
+.hero h1 {
+  margin: 0 0 1rem;
+  max-width: 14ch;
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 5vw, 3rem);
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  line-height: 1.05;
+  color: var(--brass-soft);
+  animation: riseIn 0.9s ease 0.12s both;
 }
 
 .hero-lead {
   margin: 0 0 1.75rem;
-  max-width: 36ch;
+  max-width: 34ch;
   color: var(--muted);
   font-size: 1.05rem;
-  animation: riseIn 0.9s ease 0.18s both;
+  animation: riseIn 0.9s ease 0.22s both;
 }
 
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
-  justify-content: center;
-  animation: riseIn 0.9s ease 0.28s both;
+  justify-content: flex-start;
+  animation: riseIn 0.9s ease 0.32s both;
 }
 
 .hero-meta {
@@ -252,10 +257,10 @@ button {
   display: flex;
   flex-wrap: wrap;
   gap: 0.55rem 1.1rem;
-  justify-content: center;
+  justify-content: flex-start;
   color: var(--muted);
   font-size: 0.9rem;
-  animation: riseIn 0.9s ease 0.38s both;
+  animation: riseIn 0.9s ease 0.4s both;
 }
 
 .btn {
@@ -574,6 +579,10 @@ button {
     grid-template-columns: 1fr 1fr;
   }
 
+  .gallery-item--wide {
+    grid-column: 1 / -1;
+  }
+
   .gallery-item,
   .gallery-item img {
     min-height: 0;
@@ -596,7 +605,7 @@ button {
 
 @media (min-width: 1024px) {
   .hero-copy {
-    padding-bottom: 4rem;
+    padding-bottom: 5.5rem;
   }
 
   .gallery {
@@ -605,6 +614,10 @@ button {
 
   .gallery-item {
     aspect-ratio: 4 / 3;
+  }
+
+  .gallery-item--wide {
+    aspect-ratio: 21 / 9;
   }
 
   .gallery-video {
@@ -620,7 +633,7 @@ button {
   .hero-media img,
   .reveal,
   .brand-mark,
-  .brand-eyebrow,
+  .hero h1,
   .hero-lead,
   .hero-actions {
     animation: none !important;
