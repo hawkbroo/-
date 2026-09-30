@@ -183,9 +183,10 @@ button {
 }
 
 .hero-media img {
-  width: min(33.6vw, 224px);
+  width: 420px;
+  max-width: 70vw;
   height: auto;
-  max-height: 56vh;
+  max-height: 70vh;
   object-fit: contain;
   object-position: center center;
   transform: none;
@@ -194,8 +195,9 @@ button {
 
 @media (max-width: 640px) {
   .hero-media img {
-    width: min(48vw, 176px);
-    max-height: 44vh;
+    width: 280px;
+    max-width: 72vw;
+    max-height: 50vh;
   }
 }
 
