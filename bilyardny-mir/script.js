@@ -24,7 +24,7 @@ onScroll();
 window.addEventListener("scroll", onScroll, { passive: true });
 
 const revealItems = document.querySelectorAll(
-  ".section-head, .table-stat, .gallery-item, .review-grid blockquote, .visit-card, .visit-photo"
+  ".section-head, .table-stat, .gallery-video, .gallery-feature, .gallery-item, .review-grid blockquote, .visit-card, .visit-photo"
 );
 
 revealItems.forEach((el) => el.classList.add("reveal"));
