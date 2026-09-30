@@ -168,7 +168,7 @@ button {
   position: relative;
   min-height: 100svh;
   display: grid;
-  align-items: end;
+  align-items: center;
   overflow: hidden;
   background: #041a14;
 }
@@ -252,15 +252,15 @@ button {
 .hero-copy {
   position: relative;
   z-index: 2;
-  width: min(100% - 2 * var(--space), 42rem);
-  margin: 0 auto 0 max(var(--space), calc((100% - var(--max)) / 2));
-  padding: 7rem 0 4.5rem;
+  width: min(100% - 1.25rem * 2, 42rem);
+  margin: 0 auto 0 max(0.85rem, calc((100% - var(--max)) / 2 - 1.25rem));
+  padding: 5.5rem 0 3rem;
   text-align: left;
   display: block;
 }
 
 .brand-mark {
-  margin: 0 0 0.65rem;
+  margin: 0 0 1.35rem;
   font-family: var(--font-display);
   font-size: clamp(2.55rem, 6.5vw, 4.1rem);
   letter-spacing: 0.05em;
@@ -692,7 +692,8 @@ button {
 
 @media (min-width: 1024px) {
   .hero-copy {
-    padding-bottom: 5.5rem;
+    padding-top: 4.5rem;
+    padding-bottom: 3rem;
   }
 
   .gallery {
