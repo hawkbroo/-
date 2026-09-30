@@ -371,7 +371,7 @@ button {
 }
 
 .gallery-video {
-  width: min(100% - 2 * var(--space), 460px);
+  width: min(100% - 2 * var(--space), 720px);
   margin: 0 auto 4rem;
 }
 
@@ -596,10 +596,6 @@ button {
     grid-template-columns: 1fr 1fr;
   }
 
-  .gallery-item--wide {
-    grid-column: 1 / -1;
-  }
-
   .gallery-item,
   .gallery-item img {
     min-height: 0;
@@ -638,12 +634,8 @@ button {
     aspect-ratio: 4 / 3;
   }
 
-  .gallery-item--wide {
-    aspect-ratio: 21 / 9;
-  }
-
   .gallery-video {
-    width: min(100% - 2 * var(--space), 440px);
+    width: min(100% - 2 * var(--space), 760px);
     margin-bottom: 4.5rem;
   }
 }
