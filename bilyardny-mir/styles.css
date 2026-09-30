@@ -189,15 +189,15 @@ button {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(180deg, rgba(5, 7, 6, 0.35) 0%, rgba(5, 7, 6, 0.55) 40%, rgba(5, 7, 6, 0.92) 100%),
-    radial-gradient(ellipse at 70% 40%, rgba(15, 61, 46, 0.35), transparent 55%);
+    linear-gradient(90deg, rgba(5, 7, 6, 0.82) 0%, rgba(5, 7, 6, 0.45) 42%, rgba(5, 7, 6, 0.25) 100%),
+    linear-gradient(180deg, rgba(5, 7, 6, 0.25) 0%, rgba(5, 7, 6, 0.55) 55%, rgba(5, 7, 6, 0.9) 100%);
 }
 
 .hero-copy {
   position: relative;
   z-index: 1;
-  width: min(100% - 2 * var(--space), var(--max));
-  margin: 0 auto;
+  width: min(100% - 2 * var(--space), 34rem);
+  margin: 0 auto 0 max(var(--space), calc((100% - var(--max)) / 2));
   padding: 7rem 0 4.5rem;
   text-align: left;
   display: block;
@@ -371,8 +371,8 @@ button {
 }
 
 .gallery-video {
-  width: min(100% - 2 * var(--space), 720px);
-  margin: 0 auto 1.25rem;
+  width: min(100% - 2 * var(--space), 420px);
+  margin: 0 auto 4rem;
 }
 
 .gallery-video video {
@@ -455,6 +455,20 @@ button {
 .visit-card {
   margin: 0;
   padding: 0;
+  text-align: left;
+}
+
+.visit-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: flex-start;
+  align-items: stretch;
+  margin: 0;
+  margin-inline: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 100%;
 }
 
 .visit-photo {
@@ -621,7 +635,8 @@ button {
   }
 
   .gallery-video {
-    width: min(100% - 2 * var(--space), 640px);
+    width: min(100% - 2 * var(--space), 400px);
+    margin-bottom: 4.5rem;
   }
 }
 
