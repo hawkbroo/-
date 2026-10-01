@@ -925,7 +925,7 @@ button {
     flex-direction: column;
     justify-content: center;
     overflow: hidden;
-    transform: translateY(-6%);
+    transform: translateY(8%);
   }
 
   .hero-titles {
