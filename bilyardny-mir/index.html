@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=11" />
+  <link rel="stylesheet" href="styles.css?v=12" />
 </head>
 <body>
   <div class="noise" aria-hidden="true"></div>
@@ -66,16 +66,26 @@
       </div>
       <div class="tables-grid">
         <article class="table-stat">
-          <span class="table-count" data-count="6">0</span>
-          <h3>Русский бильярд</h3>
-          <p>Классика на зелёном сукне под мягким светом</p>
-          <p class="table-price">600 ₽ / час</p>
+          <div class="table-stat__text">
+            <span class="table-count" data-count="6">0</span>
+            <h3>Русский бильярд</h3>
+            <p>Классика на зелёном сукне под мягким светом</p>
+            <p class="table-price">600 ₽ / час</p>
+          </div>
+          <figure class="table-stat__photo">
+            <img src="images/table-russian.jpg" alt="Шары русского бильярда" width="768" height="1024" loading="lazy" />
+          </figure>
         </article>
         <article class="table-stat">
-          <span class="table-count" data-count="2">0</span>
-          <h3>Американка</h3>
-          <p>Пул на профессиональных столах</p>
-          <p class="table-price">600 ₽ / час</p>
+          <div class="table-stat__text">
+            <span class="table-count" data-count="2">0</span>
+            <h3>Американка</h3>
+            <p>Пул на профессиональных столах</p>
+            <p class="table-price">600 ₽ / час</p>
+          </div>
+          <figure class="table-stat__photo">
+            <img src="images/table-american.jpg" alt="Шары американского пула" width="768" height="1024" loading="lazy" />
+          </figure>
         </article>
       </div>
     </section>
