@@ -526,8 +526,8 @@ button {
 }
 
 .gallery-video {
-  width: min(100% - 2 * var(--space), 720px);
-  margin: 0 auto 4rem;
+  width: min(100% - 2 * var(--space), 920px);
+  margin: 0.65rem auto 0;
 }
 
 .gallery-video video {
@@ -796,12 +796,13 @@ button {
   }
 
   .gallery-item {
-    aspect-ratio: 4 / 3;
+    aspect-ratio: 3 / 4;
   }
 
   .gallery-video {
-    width: min(100% - 2 * var(--space), 760px);
-    margin-bottom: 4.5rem;
+    width: min(100% - 2 * var(--space), 920px);
+    margin-top: 0.65rem;
+    margin-bottom: 0;
   }
 }
 
