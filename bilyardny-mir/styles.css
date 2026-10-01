@@ -178,7 +178,7 @@ button {
   inset: 0;
   z-index: 0;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1.35fr 0.85fr;
 }
 
 .hero-side {
@@ -188,7 +188,7 @@ button {
 }
 
 .hero-side--left {
-  background: #0a2a22;
+  background: transparent;
 }
 
 .hero-side--left img {
@@ -205,11 +205,11 @@ button {
   align-items: center;
   justify-content: center;
   background: #012820;
-  padding: clamp(0.75rem, 2vw, 1.5rem);
+  padding: clamp(0.5rem, 1.5vw, 1rem);
 }
 
 .hero-side--right img {
-  width: min(100%, 520px);
+  width: min(100%, 480px);
   height: auto;
   max-height: min(92vh, 920px);
   object-fit: contain;
@@ -240,9 +240,9 @@ button {
   z-index: 1;
   pointer-events: none;
   background:
-    linear-gradient(90deg, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.12) 18%, transparent 35%, transparent 65%, rgba(0, 0, 0, 0.12) 82%, rgba(0, 0, 0, 0.4) 100%),
-    linear-gradient(180deg, rgba(0, 0, 0, 0.35) 0%, transparent 22%, transparent 70%, rgba(0, 0, 0, 0.55) 100%);
-  box-shadow: inset 0 0 90px 24px rgba(0, 0, 0, 0.28);
+    linear-gradient(90deg, rgba(0, 0, 0, 0.28) 0%, transparent 22%, transparent 100%),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.22) 0%, transparent 18%, transparent 72%, rgba(0, 0, 0, 0.45) 100%);
+  box-shadow: none;
 }
 
 .hero-veil {
@@ -282,7 +282,7 @@ button {
 }
 
 .hero h1 {
-  margin: 0.2rem 0 1.85rem;
+  margin: 0.2rem 0 2.75rem;
   max-width: 22ch;
   font-family: var(--font-display);
   font-size: clamp(1.25rem, 3.2vw, 1.85rem);
@@ -294,7 +294,7 @@ button {
 }
 
 .hero-lead {
-  margin: 0 0 1.75rem;
+  margin: 0.35rem 0 1.75rem;
   max-width: 42ch;
   color: rgba(255, 255, 255, 0.88);
   font-size: 1.05rem;
