@@ -291,7 +291,7 @@ button {
   }
 
   .hero-side--left img {
-    object-position: center 40%;
+    object-position: center 35%;
   }
 
   .hero-side--right {
@@ -315,32 +315,12 @@ button {
 
   .hero-vignette {
     position: absolute;
-    inset: 0 auto auto 0;
-    width: 100%;
-    height: 100svh;
-  }
-
-  .hero-copy {
-    position: absolute;
     top: 0;
     left: 0;
+    right: 0;
+    bottom: auto;
     width: 100%;
     height: 100svh;
-    margin: 0;
-    padding: 5.25rem 1rem 1.5rem;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    overflow: hidden;
-  }
-
-  .hero-titles {
-    margin-bottom: 1.75rem;
-  }
-
-  .hero-lead {
-    margin-bottom: 1.25rem;
   }
 }
 
@@ -924,5 +904,48 @@ button {
     transition: none !important;
     opacity: 1;
     transform: none;
+  }
+}
+
+/* Mobile hero text: keep above the second photo */
+@media (max-width: 768px) {
+  .hero-copy {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    width: 100%;
+    max-width: none;
+    height: auto;
+    max-height: 72svh;
+    margin: 0;
+    padding: 4.75rem 1rem 1rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow: hidden;
+  }
+
+  .hero-titles {
+    margin: 0 0 1.1rem;
+  }
+
+  .hero h1 {
+    margin: 0.15rem 0 0;
+  }
+
+  .hero-lead {
+    margin: 0 0 1rem;
+    font-size: 0.98rem;
+  }
+
+  .hero-actions {
+    margin: 0;
+  }
+
+  .hero-meta {
+    margin-top: 1rem;
   }
 }
