@@ -272,13 +272,31 @@ button {
 }
 
 @media (max-width: 768px) {
+  .hero {
+    min-height: auto;
+    align-items: start;
+    display: block;
+  }
+
   .hero-media {
+    position: relative;
+    inset: auto;
+    display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 42% 58%;
+    grid-template-rows: auto auto;
+  }
+
+  .hero-side--left {
+    min-height: 100svh;
   }
 
   .hero-side--left img {
     object-position: center 40%;
+  }
+
+  .hero-side--right {
+    min-height: 78svh;
+    padding: 1rem;
   }
 
   .hero-right-frame {
@@ -286,13 +304,43 @@ button {
   }
 
   .hero-side--right img {
-    max-height: 48vh;
+    max-height: none;
   }
 
   .hero-book {
     top: 2%;
     font-size: 0.75rem;
     padding: 0.55rem 0.9rem;
+  }
+
+  .hero-vignette {
+    position: absolute;
+    inset: 0 auto auto 0;
+    width: 100%;
+    height: 100svh;
+  }
+
+  .hero-copy {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100svh;
+    margin: 0;
+    padding: 5.25rem 1rem 1.5rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow: hidden;
+  }
+
+  .hero-titles {
+    margin-bottom: 1.75rem;
+  }
+
+  .hero-lead {
+    margin-bottom: 1.25rem;
   }
 }
 
@@ -321,6 +369,13 @@ button {
   display: block;
 }
 
+.hero-titles {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 0 4.25rem;
+}
+
 .brand-mark {
   margin: 0 0 0.35rem;
   font-family: var(--font-display);
@@ -344,14 +399,15 @@ button {
 }
 
 .hero h1 {
-  margin: 0.2rem 0 4.25rem;
-  max-width: 22ch;
+  margin: 0.2rem 0 0;
+  max-width: none;
   font-family: var(--font-display);
   font-size: clamp(1.25rem, 3.2vw, 1.85rem);
   font-weight: 400;
   letter-spacing: 0.04em;
   line-height: 1.15;
   color: rgba(255, 255, 255, 0.92);
+  text-align: center;
   animation: riseIn 0.9s ease 0.12s both;
 }
 
