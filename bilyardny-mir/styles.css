@@ -83,16 +83,26 @@ button {
 }
 
 .logo {
+  position: relative;
+  z-index: 1;
   font-family: var(--font-display);
   font-size: clamp(1.15rem, 3.5vw, 1.55rem);
   letter-spacing: 0.06em;
   line-height: 1.05;
-  max-width: 12ch;
+  color: var(--cream);
+}
+
+.logo span {
+  display: block;
 }
 
 .nav {
   display: none;
   gap: 1.5rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .nav a {
@@ -111,6 +121,9 @@ button {
 }
 
 .nav-toggle {
+  position: relative;
+  z-index: 1;
+  margin-left: auto;
   width: 2.5rem;
   height: 2.5rem;
   display: grid;
@@ -140,6 +153,7 @@ button {
   top: 100%;
   left: 0;
   right: 0;
+  transform: none;
   flex-direction: column;
   gap: 1rem;
   padding: 1rem var(--space) 1.25rem;
@@ -215,7 +229,7 @@ button {
 .hero-book {
   position: absolute;
   left: 50%;
-  top: 12%;
+  top: 2.5%;
   transform: translateX(-50%);
   z-index: 3;
   padding: 0.65rem 1.15rem;
@@ -254,7 +268,7 @@ button {
   }
 
   .hero-book {
-    top: 5%;
+    top: 2%;
     font-size: 0.75rem;
     padding: 0.55rem 0.9rem;
   }
