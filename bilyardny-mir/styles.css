@@ -370,9 +370,7 @@ button {
 }
 
 .hero-titles {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
+  display: block;
   margin: 0 0 4.25rem;
 }
 
@@ -400,14 +398,14 @@ button {
 
 .hero h1 {
   margin: 0.2rem 0 0;
-  max-width: none;
+  max-width: 22ch;
   font-family: var(--font-display);
   font-size: clamp(1.25rem, 3.2vw, 1.85rem);
   font-weight: 400;
   letter-spacing: 0.04em;
   line-height: 1.15;
   color: rgba(255, 255, 255, 0.92);
-  text-align: center;
+  text-align: left;
   animation: riseIn 0.9s ease 0.12s both;
 }
 
